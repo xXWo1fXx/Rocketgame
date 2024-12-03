@@ -3,7 +3,7 @@ const moveSpeed = 5;
 const ufoList = [];
 const planetList = [];
 
-const hp = 5;
+const hp = 3;
 
 const leben1 = PIXI.Sprite.from('assets/leben.png');
 leben1.scale.x = 0.03;
@@ -23,23 +23,9 @@ leben3.scale.y = 0.03;
 leben3.x = 720;
 leben3.y = 10;
 
-const leben4 = PIXI.Sprite.from('assets/leben.png');
-leben4.scale.x = 0.03;
-leben4.scale.y = 0.03;
-leben4.x = 745;
-leben4.y = 10;
-
-const leben5 = PIXI.Sprite.from('assets/leben.png');
-leben5.scale.x = 0.03;
-leben5.scale.y = 0.03;
-leben5.x = 770;
-leben5.y = 10;
-
 app.stage.addChild(leben1);
 app.stage.addChild(leben2);
 app.stage.addChild(leben3);
-app.stage.addChild(leben4);
-app.stage.addChild(leben5);
 
 const gameOver = PIXI.Sprite.from('assets/gameOver.png');
 gameOver.x = 210;
